@@ -4,6 +4,9 @@ def play():
     player = input("What's your choice? \n 'r' for rock, 's' for scissors and 'p' for paper \n ")
     computer = random.choice(['r', 'p', 's'])
     
+    if player!= 'p' or 's' or 'r':
+        print("Enter a valid choice!!")
+    
     if player == computer:
         return "It\'s a tie!"
 
